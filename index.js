@@ -17,7 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Use the routes defined in dataRoutes
-app.use('/api', dataRoutes);
+app.use('/', dataRoutes);
 
 // MongoDB connection
 app.listen(PORT, () => {
